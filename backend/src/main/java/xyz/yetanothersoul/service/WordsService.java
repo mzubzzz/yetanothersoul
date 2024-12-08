@@ -2,9 +2,12 @@ package xyz.yetanothersoul.service;
 
 import java.util.List;
 
-import xyz.yetanothersoul.entities.Word;
+import xyz.yetanothersoul.dto.WordDto;
+import xyz.yetanothersoul.entities.Language;
 
 public interface WordsService {
 
-    public List<Word> getWords();
+    public List<WordDto> getWords();
+
+    public List<WordDto> getWords(Language language);
 }
