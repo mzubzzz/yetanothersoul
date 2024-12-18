@@ -13,9 +13,7 @@ export default [
     ignores: ['**/dist/**', '**/dist-ssr/**', '**/coverage/**'],
   },
 
-  eslint.configs.recommended,
-  ...typescriptEslint.configs.recommended,
-  ...pluginVue.configs['flat/recommended'],
+  ...pluginVue.configs['flat/essential'],
   ...vueTsEslintConfig(),
   skipFormatting,
 ]
